@@ -1,10 +1,8 @@
 export default async function handler(
-  req: { method: string; body: { email: any; password: any } },
+  req: { method: string; body: { email: string; password: string } },
   res: {
-    status: (arg0: number) => {
-      (): any;
-      new (): any;
-      json: { (arg0: { message: string }): void; new (): any };
+    status: (code: number) => {
+      json: (response: { message: string }) => void;
     };
   }
 ) {
