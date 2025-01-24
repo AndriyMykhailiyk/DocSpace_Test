@@ -22,7 +22,7 @@ const MultiFilterTable: React.FC = () => {
     { id: 5, name: "Item 5", category: "B", date: "2023-02-28", value: 60 },
   ];
 
-  const [data, setData] = useState<DataItem[]>(initialData);
+  const [data] = useState<DataItem[]>(initialData);
   const [category, setCategory] = useState("");
 
   const filteredData = data.filter((item) => {
